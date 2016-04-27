@@ -23,7 +23,7 @@ include_dirs += [os.environ['LIBXCDIR'] + '/include']
 libraries += ['xc']
 			
 # compiler settings for Intel Composer 2013 (ver 14.x)
-extra_compile_args = ['-xHost', '-O3', '-no-prec-div', '-static', '-std=c99', '-fPIC']
+extra_compile_args = ['-xHost', '-xAVX', '-O3', '-no-prec-div', '-static', '-std=c99', '-fPIC']
 #extra_compile_args += ['-offload-option,mic,compiler,"-vec-report -openmp"']
 #extra_compile_args += ['-opt-report-phase=offload']
 # extra_compile_args += ['-offload=none']

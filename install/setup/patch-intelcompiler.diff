@@ -2,9 +2,9 @@
 <     cc_exe = 'icc -m64 -fPIC'
 <     cc_args = "-fPIC"
 ---
->     cc_exe = 'icc -O3 -fPIC -fp-model strict -fomit-frame-pointer -openmp -xHost'
->     cc_args = "-O3 -fPIC -fp-model strict -fomit-frame-pointer -openmp -xHost"
+>     cc_exe = 'icc -O3 -fPIC -fp-model strict -fomit-frame-pointer -openmp -xAVX'
+>     cc_args = "-O3 -fPIC -fp-model strict -fomit-frame-pointer -openmp -xAVX"
 39c39
 <         self.cc_exe = 'icc -m64 -fPIC'
 ---
->         self.cc_exe = 'icc -O3 -fPIC -fp-model strict -fomit-frame-pointer -openmp -xHost'
+>         self.cc_exe = 'icc -O3 -fPIC -fp-model strict -fomit-frame-pointer -openmp -xAVX'
