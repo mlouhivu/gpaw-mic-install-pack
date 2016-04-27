@@ -14,7 +14,7 @@ nphcores=61
 nphcores=$((nphcores - 1))
 
 # number of threads per physical core
-tpc=3
+tpc=4
 
 # ranks per device
 rpd=$((ppn / ndev))
