@@ -4,10 +4,8 @@
 tgt=<TARGET>
 
 # files and directories to install
-dirs="benchmarks examples pymic include"
+dirs="benchmarks examples include"
 files="LICENSE.txt env.sh README.md CHANGELOG.md"
-
-mkdir $tgt
 
 for dir in $dirs 
 do

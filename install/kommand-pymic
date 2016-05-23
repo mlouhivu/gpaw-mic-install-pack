@@ -24,8 +24,13 @@ sed -e "s|<TARGET>|$base/pymic|" setup/install-pymic.sh > pymic/install-pymic.sh
 cd pymic
 export PYTHON_INCLUDES="-I$PYTHONHOME/include/python2.7 -I$PYTHONHOME/lib/python2.7/site-packages/numpy/core/include"
 source ./env.sh
-make | tee loki-make
+python setup.py install --prefix=$base/pymic | tee loki-inst
 bash install-pymic.sh
 patch $base/pymic/env.sh ../setup/patch-pymic-env.diff
 cd ..
+cd $base/pymic
+mv -i lib/python2.7/site-packages/* lib/
+rmdir lib/python2.7/site-packages
+rmdir lib/python2.7
+cd -
 
