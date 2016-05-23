@@ -1,5 +1,5 @@
 # load compile stack
-module load intel
+module load intel/2016.01
 
 # target
 base=<BASE>

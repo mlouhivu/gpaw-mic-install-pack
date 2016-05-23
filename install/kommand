@@ -2,7 +2,7 @@
 base=/scratch/work/user/louhivuo/lib
 
 # load compile stack
-module load intel
+module load intel/2016.01
 
 # python
 tar xvfz src/Python-2.7.10.tgz

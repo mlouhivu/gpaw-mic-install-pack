@@ -5,7 +5,7 @@
 base=/scratch/work/user/louhivuo/lib
 
 # load compile stack
-module load intel
+module load intel/2016.01
 
 # set environment
 export PYTHONHOME=$base/python-2.7.10
@@ -26,5 +26,6 @@ export PYTHON_INCLUDES="-I$PYTHONHOME/include/python2.7 -I$PYTHONHOME/lib/python
 source ./env.sh
 make | tee loki-make
 bash install-pymic.sh
+patch $base/pymic/env.sh ../setup/patch-pymic-env.diff
 cd ..
 

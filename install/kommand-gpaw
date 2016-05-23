@@ -5,7 +5,7 @@
 base=/scratch/work/user/louhivuo/lib
 
 # load compile stack
-module load intel
+module load intel/2016.01
 
 # set environment
 export PYTHONHOME=$base/python-2.7.10
