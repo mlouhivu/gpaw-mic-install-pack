@@ -22,5 +22,5 @@ unset I_MPI_PMI_LIBRARY
 export I_MPI_FABRICS=shm:dapl
 export I_MPI_DAPL_PROVIDER_LIST=ofa-v2-mlx4_0-1u,ofa-v2-scif0,ofa-v2-mcm-1
 
-GPAW_PPN=$ppn GPAW_OFFLOAD=1 mpirun -np $ncores ./affinity-wrapper.sh $ppn gpaw-python carbon-nanotube.py
+GPAW_PPN=$ppn GPAW_OFFLOAD=1 mpirun -np $ncores ./affinity-wrapper.sh $ppn gpaw-python input.py
 
