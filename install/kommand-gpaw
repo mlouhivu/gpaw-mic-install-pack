@@ -25,9 +25,9 @@ cd -
 
 # gpaw
 tar xvfz src/gpaw-mic.tar.gz
-cp setup/customize_mic.py gpaw-mic/
+cp setup/customize-knc.py gpaw-mic/
 cd gpaw-mic
-python setup.py install --customize=customize_mic.py --prefix=$base/gpaw-mic | tee loki-inst
+python setup.py install --customize=customize-knc.py --prefix=$base/gpaw-mic | tee loki-inst
 cd gpaw/mic
 make
 cp libmicblas.so $base/gpaw-mic/lib/python2.7/site-packages/gpaw/mic/
